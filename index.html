@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Form</title>
+    <style>
+        body{
+            background-image: url("https://img.freepik.com/premium-vector/online-banking-technology-concept-illustration-bank-electric-circuit-lines-background_387612-43.jpg?w=2000");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+        }
+        .container{
+            width: 70%;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.674);
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        input,select{
+            font-size: 18px;
+            padding: 5px;
+            margin: 10px;
+        }
+        label{
+            font-size: 25px;
+            color:whitesmoke;
+            padding: 20px 0px 5px 0px;
+        }
+        h1,strong{
+            color: whitesmoke;
+        }
+        input[type=text]{
+            width: 46%;
+            padding-right: 1px;
+        }
+        input[type=submit]{
+            padding: 10px;
+            width: 250px;
+            font-style: italic;
+            border-radius: 20px;
+            background-color:aquamarine;
+            color: black;
+            font-size: 30px;
+            margin: auto;
+        }
+        .last{
+            margin-bottom: 30px;
+        }
+        input[type=submit]:hover{
+            background-color:green;
+            color: blanchedalmond;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <h1>Bank Account Opening Form</h1>
+        <label for="type">Account Type</label>
+        <select id="type" name="typelist" form="typeform">
+          <option value="general">General Account</option>
+          <option value="priority">Priority Banking</option>
+          <option value="preferred">Preferred Banking</option>
+          <option value="private">Private Banking</option>
+          <option value="time">Time Deposite</option>
+        </select>
+        <label for="name">Name</label>
+        <div>
+            <input type="text" id="fname" name="fname" placeholder="First" />
+            <input type="text" id="lname" name="lname" placeholder="Last" />
+        </div>
+        <label for="phone">Phone</label>
+        <input type="number" name="phone" id="phone" placeholder="### ### ####">
+        <label for="phone">Email</label>
+        <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+        <label for="phone">Mounthly Income</label>
+        <input type="number" name="income" id="income" placeholder="In Rupees">
+        <label for="phone">Address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <label for="phone">Pincode</label>
+        <input type="number" name="pincode" id="pincode" placeholder="## ## ##">
+        <label for="phone">How did you here about us?</label>
+        <div>
+            <input type="checkbox" id="sms" name="sms" value="SMS">
+            <strong for="sms">SMS</strong>
+        </div>
+        <div>
+            <input type="checkbox" id="bill" name="bill" value="Outdoor billboards">
+            <strong for="bill">Outdoor billboards</strong>
+        </div>
+        <div>
+            <input type="checkbox" id="news" name="news" value="Newspaper">
+            <strong for="news">Newspaper</strong>
+        </div>
+        <div>
+            <input type="checkbox" id="internet" name="internet" value="Internet">
+            <strong for="internet">Internet</strong>
+        </div>
+        <div>
+            <input type="checkbox" id="media" name="media" value="Social Media">
+            <strong for="media">Social Media</strong>
+        </div>
+        <div>
+            <input type="checkbox" id="friends" name="friends" value="Friends">
+            <strong for="friends">Friends</strong>
+        </div>
+        <div class="last">
+            <input type="checkbox" id="other" name="other" value="Other">
+            <strong for="other">Other</strong>
+        </div>
+        <input type="submit" value="SEND">
+      </form>
+    </div>
+  </body>
+</html>
